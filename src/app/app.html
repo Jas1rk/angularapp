@@ -1,7 +1,7 @@
 
 <div class="flex flex-col justify-center items-center m-auto mt-2">
-  <app-add-todo></app-add-todo>
-  <app-list-todo></app-list-todo>
+  <app-add-todo (listTodo)="onTodo($event)"></app-add-todo>
+  <app-list-todo [todos]="allTodos"></app-list-todo>
 
 </div>
 
