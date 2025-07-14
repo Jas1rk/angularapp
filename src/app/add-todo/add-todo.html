@@ -1,6 +1,6 @@
 <div class="flex gap-3 justify-center items-center">
-   <form>
-    <input type="text" class="p-2 bg-gray-900 outline-none border text-gray-200 rounded-xl" placeholder="enter task">
-    <button class="bg-yellow-400 p-2 rounded-xl text-black cursor-pointer">add</button>
+   <form (ngSubmit)="handleAdd()">
+    <input type="text" class="p-2 bg-gray-900 outline-none border text-gray-200 rounded-xl" name="input" placeholder="enter task" [(ngModel)]="input">
+    <button class="bg-yellow-400 p-2 rounded-xl text-black cursor-pointer" type="submit">add</button>
    </form>
 </div>
